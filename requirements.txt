@@ -1,0 +1,2 @@
+progressbar2==3.36.0
+pyAesCrypt==0.3
