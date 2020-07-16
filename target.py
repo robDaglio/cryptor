@@ -46,8 +46,8 @@ class Target():
         elif self.mode == '-d':
             try:
                 self.decrypt()
-            except:
-                print("[x] Failed!")
+            except ValueError as value_error:
+                print(f"[x] Failed: {value_error}")
             else:
                 print("[*] Done!")
 

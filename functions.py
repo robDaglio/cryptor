@@ -6,7 +6,7 @@ def usage():
     print(f'[!] Usage: python {argv[0]} <mode [-e or -d]> <FILE/DIR> <password (OPTIONAL) [-p]> <password>')
 
 def check_args():
-    if len(argv) is 1 or len(argv) is 2 or len(argv) is 4:
+    if len(argv) == 1 or len(argv) == 2 or len(argv) == 4:
         usage()
         exit(0)
 
@@ -16,9 +16,9 @@ def check_args():
         usage()
         exit(0)
 
-    if (len(argv) is 3):
+    if (len(argv) == 3):
         return getpass("[!] Password: ")
-    elif (len(argv) is 5):
+    elif (len(argv) == 5):
         return get_pass()
     else:
         usage()
